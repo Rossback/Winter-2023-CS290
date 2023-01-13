@@ -10,24 +10,24 @@
     [x] paragraphs (p)
     [x] lists (ol, ul, dl)
     [x] line breaks (br)
-    [] anchor (a, a link to another page)
-    [] relative path
-    [] absolute path
+    [x] anchor (a, a link to another page)
+    [x] relative path
+    [x] absolute path
     [] fragment identifier
-    [] image
-    [] video
-    [] width
-    [] height
-    [] alt
-    [] table
-    [] row
-    [] data cell
-    [] border
-    [] table caption
-    [] table header
-    [] table body
-    [] table footer
-    [] spanning columns
+    [x] image
+    [x] video
+    [x] width
+    [x] height
+    [x] alt
+    [x] table
+    [x] row
+    [x] data cell
+    [x] border
+    [x] table caption
+    [x] table header
+    [x] table body
+    [x] table footer
+    [x] spanning columns
     (side note, I copy pasted a random number of the brackets and it ended
     up being exactly the amount of brackets needed)
  -->
@@ -40,6 +40,11 @@
     <title>This is the title!</title>
     
  </head>
+ <style>table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+ }</style>
+ 
  <body>
      <h1>
          <center>Sam Rossback's CS290 Assignment 1</center>
@@ -52,7 +57,8 @@
             project to be able to be used by me for more than<br>
             just this term :)</p></center>
      </h2>
-     <center>This is the content of the document :)</center>
+     <center>This is the content of the document outside of a paragraph or heading :)</center>
+     <center><a href="#BOTTOM">Press this to jump to the bottom of the page!</a></p></center>
      <h3>
          <center><p>My goal with this is to be able to make basically my own<br>
             personal GitHub repo on a separate website because I think<br>
@@ -65,6 +71,31 @@
             <li>Allow admin to make changes to code off of this</li>
             <li>Allow for admin to add files with extensions other than .html</li>
         </ol></center>
+        <center><a href="https://www.github.com/Rossback/">Link to my GitHub</a></center>
+        <center><video src="v12025gd0000cenea93c77uf0bi2cjfg.mp4" alt="Relative path video of a dubbed clip from Berserk in which one character remarks about Garfield" width="300"></center>
+        <center><p>To watch the video (above) right click and press play</p></center>
+        <center><img src="https://media.tenor.com/36jyC0sgn14AAAAC/labyrinth-me.gif" alt="Absolute path gif of the worm from Labyrinth saying 'Me? No, I'm just a worm'" width="300" height="300"></center>
+        <center><table><caption>Basic Info</caption>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Class Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>&nbsp; Sam Rossback &nbsp;</td>
+                <td>&nbsp; rossbackprogramming@gmail.com &nbsp;</td>
+                <td>&nbsp;&nbsp;&nbsp; CS290 &nbsp;</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <td>empty</td>
+                <td colspan="2">empty</td>
+            </tfoot>
+        </table></center>
+        <center><a id="#BOTTOM">This is the bottom :)</a></center>
  </body>
  </html>
  
