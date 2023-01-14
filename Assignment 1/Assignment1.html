@@ -13,7 +13,7 @@
     [x] anchor (a, a link to another page)
     [x] relative path
     [x] absolute path
-    [] fragment identifier
+    [x] fragment identifier
     [x] image
     [x] video
     [x] width
@@ -37,7 +37,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Sam Rossback, CS290">
-    <title>This is the title!</title>
+    <title>Sam Rossback CS290 Assignment 1</title>
     
  </head>
  <style>table, th, td {
@@ -46,6 +46,7 @@
  }</style>
  
  <body>
+    <center><a href="#BOTTOM" id="TOP">Press this to jump to the bottom of the page!</a></p></center>
      <h1>
          <center>Sam Rossback's CS290 Assignment 1</center>
      </h1>
@@ -58,7 +59,6 @@
             just this term :)</p></center>
      </h2>
      <center>This is the content of the document outside of a paragraph or heading :)</center>
-     <center><a href="#BOTTOM">Press this to jump to the bottom of the page!</a></p></center>
      <h3>
          <center><p>My goal with this is to be able to make basically my own<br>
             personal GitHub repo on a separate website because I think<br>
@@ -72,7 +72,7 @@
             <li>Allow for admin to add files with extensions other than .html</li>
         </ol></center>
         <center><a href="https://www.github.com/Rossback/">Link to my GitHub</a></center>
-        <center><video src="v12025gd0000cenea93c77uf0bi2cjfg.mp4" alt="Relative path video of a dubbed clip from Berserk in which one character remarks about Garfield" width="300"></center>
+        <center><video src="v12025gd0000cenea93c77uf0bi2cjfg.mp4" alt="Relative path video of a dubbed clip from Berserk in which one character remarks about Garfield" width="600"></center>
         <center><p>To watch the video (above) right click and press play</p></center>
         <center><img src="https://media.tenor.com/36jyC0sgn14AAAAC/labyrinth-me.gif" alt="Absolute path gif of the worm from Labyrinth saying 'Me? No, I'm just a worm'" width="300" height="300"></center>
         <center><table><caption>Basic Info</caption>
@@ -95,7 +95,7 @@
                 <td colspan="2">empty</td>
             </tfoot>
         </table></center>
-        <center><a id="#BOTTOM">This is the bottom :)</a></center>
+        <center><a href="#TOP" id="BOTTOM">This is the bottom :) Press this to go to the top</a></center>
  </body>
  </html>
  
