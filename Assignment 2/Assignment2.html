@@ -5,16 +5,16 @@
     [] id selector
     [] role attribute
     [] attribute selectors
-    [] font family
-    [] font size
-    [] font style
-    [] font variant
-    [] font weight
+    [x] font family
+    [x] font size
+    [x] font style
+    [x] font variant
+    [x] font weight
     [] font property shorthand
-    [] text align
+    [x] text align
     [] text decoration
     [] line height
-    [] color (in a few ways)
+    [x] color (in a few ways)
     [] border and shorthand
     [] padding and shorthand
     [] margin and shorthand
@@ -31,13 +31,27 @@
 
 <style>
 table, th, td {
-    border: 1px solid black;
+    text-align:center;
+    border: 1px solid white;
     border-collapse: collapse;
+    color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:small;
+    font-style:italic;
+    font-variant:small-caps;
+    font-weight:100;
 }
 
 body {
     background-color: #181A1B;
+    text-align:center;
 }
+
+a {
+    text-align: center;
+    border-color: blue;
+}
+
 
 </style>
  
@@ -48,14 +62,13 @@ body {
         Sam Rossback's CS290 Assignment 1
     </h1>
     <h2>
-        <p style="color:white" style="text-align:center;">I reserve the right to change anything in this<br>
+        <p style="color:white" >I reserve the right to change anything in this<br>
             project due to the fact that I think of a lot<br>
             of projects in rapid succession, and then realize<br>
             that the project isn't that useful, and I want this<br>
             project to be able to be used by me for more than<br>
             just this term :)</p>
     </h2>
-    This is the content of the document outside of a paragraph or heading :)
     <h3>
         <p style="color:white">My goal with this is to be able to make basically my own<br>
             personal GitHub repo on a separate website because I think<br>
