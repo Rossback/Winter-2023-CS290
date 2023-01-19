@@ -1,23 +1,23 @@
 <!--
     [x] class attribute
     [x] class selector
-    [] id attribute
-    [] id selector
-    [] role attribute
-    [] attribute selectors
+    [x] id attribute
+    [x] id selector
+    [x] role attribute
+    [x] attribute selectors
     [x] font family
     [x] font size
     [x] font style
     [x] font variant
     [x] font weight
-    [] font property shorthand
+    [x] font property shorthand
     [x] text align
-    [] text decoration
-    [] line height
+    [x] text decoration
+    [x] line height
     [x] color (in a few ways)
-    [] border and shorthand
-    [] padding and shorthand
-    [] margin and shorthand
+    [x] border and shorthand
+    [x] padding and shorthand
+    [x] margin and shorthand
 -->
 <!DOCTYPE html>
 
@@ -42,17 +42,12 @@ table, td, th, tr {
     padding: 5px;
     border-collapse: collapse;
     color:white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size:small;
-    font-style:italic;
-    font-variant:small-caps;
-    font-weight:lighter;
-}
+    font:italic small-caps lighter 12px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
 
 .maintext {
-    color:white;
+    color:rgb(169, 8, 158);
     font-size:12pt;
-    font-family:cursive;
 }
 
 body {
@@ -60,9 +55,16 @@ body {
     text-align:center;
 }
 
-a {
-    text-align: center;
-    border-color: blue;
+#bodytext {
+    color: cyan;
+    font-size:12pt;
+    margin: 10px 5px 10px 5px;
+    padding: 10px 5px 10px 5px;
+}
+
+p[class|="maintext"] {
+    font-family:cursive;
+    text-decoration:cyan underline solid .5px;
 }
 
 </style>
@@ -70,21 +72,19 @@ a {
 
 <body>
     <a href="#BOTTOM" id="TOP">Press this to jump to the bottom of the page!</a></p>
-    <h1 style="color:white">
+    <h1 role="logo" style="color:white">
         Sam Rossback's CS290 Assignment 2
     </h1>
     <h2>
-        <div class=maintext>
-        <p>I reserve the right to change anything in this<br>
+        <p class="maintext">I reserve the right to change anything in this<br>
             project due to the fact that I think of a lot<br>
             of projects in rapid succession, and then realize<br>
             that the project isn't that useful, and I want this<br>
             project to be able to be used by me for more than<br>
             just this term :)</p>
-        </div>
     </h2>
     <h3>
-        <p style="color:white">My goal with this is to be able to make basically my own<br>
+        <p id="bodytext">My goal with this is to be able to make basically my own<br>
             personal GitHub repo on a separate website because I think<br>
             that'd be fun :)</p>
     </h3>
@@ -122,5 +122,6 @@ a {
         </table>
         </div>
         <a href="#TOP" id="BOTTOM">This is the bottom :) Press this to go to the top</a>
-</body>
+
+    </body>
 </html>
