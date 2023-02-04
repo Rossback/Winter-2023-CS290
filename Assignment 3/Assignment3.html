@@ -11,7 +11,7 @@
     [] position
     [] z-index
     [] display
-    [] fixed-width layout
+    [x] fixed-width layout
     [] fluid layout
     [] responsive layout
     [] @media query
@@ -38,21 +38,19 @@
 <style>
 
 body {
-    
     background-image: url('https://cdn.britannica.com/79/150179-050-E2707D87/human-eye.jpg');
     text-align:center;
 }
 
 #bodytext{
-    color:black;
+    mix-blend-mode:difference;
+    color:rgb(0,255,255);
     overflow-y:scroll;
-    width:375px;
+    width:500px;
     height:300px;
     text-align:center;
     margin:auto;
     box-sizing:border-box
-    
-    
 }
 
 table, td, th, tr {
