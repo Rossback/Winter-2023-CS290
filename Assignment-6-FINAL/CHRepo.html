@@ -2,8 +2,6 @@
     The normal requirements table that I lay out for these assignments will be at the bottom as I want to lay out my
     goals for this assignment in this header.
 
-    Does not work as intended on Mozilla Firefox Mobile :)
-
     GOALS:
         I want to create a website with similar functionality to chorus.fightthe.pw, specifically I want to achieve the following:
         [] Create a smooth and intuitive user experience (design/structure/style/js proficiency)
@@ -16,85 +14,48 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="content">
+    <meta name="keywords" content="clonehero">
+    <meta name="keywords" content="CH">
+    <meta name="keywords" content="CHRepo">
+    <meta name="keywords" content="GH">
+    <meta name="keywords" content="guitarhero">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CH Repo</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <!-- <script type="text/javascript" src="Hamburger.js"></script> -->
+    
 </head>
-</html>
 
-<style>
-body {
-    overflow-x:hidden;
-    background-color: #26292b;
-    text-align:center;
-}
-
-.navbar {
-    width:100%;
-    height:100%;
-    overflow-y:hidden;
-    background-color: #1d1137;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16pt;
-    padding: 10px;
-    color: white;
-}
-
-.navbar img {
-    position:relative;
-    top:6px;
-    left:195px;
-    width:80px;
-}
-
-.navbar a {
-    margin:15px;
-    float:right;
-    text-decoration: none;
-    color: white;
-}
-
-.navbar a:hover {
-    background-color: #503465;
-    color: #ddd;
-}
-
-.navbar a.active {
-    background-color: #503465;
-    color: #ddd;
-}
-
-.navbar input[type=text] {
-    background-color:#26292b;
-    color:white;
-    border-radius:7px;
-    font-size:14pt;
-    margin:17px 15px 0px 0px;
-    border: 2px solid #ccc;
-    float:right;
-}
-
-@media screen and (max-width:1000px) {
-    .navbar a:not(:first-child) {display:none;}
-    .navbar input:not(:first-child) {display:none;}
-    .navbar img {left:0;}
-    .navbar a.icon {
-        float:right;
-        display:block;
+<script>
+    function myFunction() {
+        var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display == "none";
+          } else {
+            x.style.display == "block";
+          }
     }
-}
-</style>
+</script>
 
 <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="navbar">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         <img src="https://clonehero.net/assets/images/ch.svg">
-        <input type="text" placeholder="Search...">
-        <a href="ContactUs.html">Contact Us</a>
-        <a href="CHRepo.html">Home</a>
-        <a></a>
-    </div>
-</body>
+        <input id="links" type="text" placeholder="Search...">
+        <a id="links" href="ContactUs.html">Contact Us</a>
+        <a id="links" href="CHRepo.html">Home</a>
+        
+        <!-- <a></a> This is for mobile, it centers the logo :) -->
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
 
+    </div>
+
+    
+</body>
+</html>
 <!--
     Demonstrate the following:
         [] an understanding of design
@@ -112,7 +73,7 @@ body {
         [] client-side components
         [] server-side components
         [] try to use some web api (don't know how to mix that with GH but will try and find a way)
-    
+
     Go re-review any of the sites that you picked at the start of the term
     (assignment0) and review them with the newfound knowledge of web
     development. Include your thoughts on what opinions have changed if any.
