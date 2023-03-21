@@ -1,0 +1,185 @@
+/* Mobile
+@media screen and (max-width:1000px) {
+    body {
+        overflow-x:hidden;
+        background-color: #26292b;
+        text-align:center;
+    }
+    
+    .centeredcontent {
+        margin:auto;
+        text-align:left;
+        width:75%;
+        background-color:#1d1137;
+        color:white;
+        font-family:"Open Sans", sans-serif;
+    }
+    
+    .navbar {
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        background-color: #1d1137;
+        font-family:"Open Sans", sans-serif;
+        font-size: 16pt;
+        padding: 10px;
+        color: white;
+    }
+    
+    .navbar img {
+        position:relative;
+        margin:auto;
+        width:80px;
+    }
+    
+    .navbar #links {
+        display:none;
+    }
+    
+    .navbar a {
+        float:right;
+        text-decoration: none;
+        color:white;
+        top:18px;
+        padding:10px;
+    }
+    
+    .navbar a.icon {
+        display:block;
+    
+    }
+    
+    .navbar a:hover {
+        background-color: #503465;
+        color: #ddd;
+    }
+    
+    .navbar a.active {
+        background-color: #503465;
+        color: #ddd;
+    }
+    
+    .navbar input[type=text] {
+        background-color:#26292b;
+        color:white;
+        border-radius:7px;
+        font-size:14pt;
+        padding:5px;
+        margin:0px 0px 0px 0px;
+        border: 2px solid #ccc;
+        float:right;
+    }
+    } */
+    
+    /*Desktop*/ 
+    @media screen and (min-width:1001px){
+        body {
+        overflow-x:hidden;
+        background-color: #26292b;
+        text-align:center;
+    }
+    
+    .navbar {
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        background-color: #1d1137;
+        font-family:"Open Sans", sans-serif;
+        font-size: 16pt;
+        padding: 10px;
+        color: white;
+    }
+    
+    .navbar img {
+        position:relative;
+        margin:auto;
+        top:5px;
+        width:80px;
+    }
+    
+    .navbar #links {
+        display:none;
+        position:absolute;
+        top:20px;
+        right:40px;
+    }
+    
+    .navbar a {
+        float:right;
+        text-decoration: none;
+        color:white;
+        top:18px;
+        padding:10px;
+    }
+    
+    .navbar a.icon {
+        display:block;
+        padding:10px;
+    }
+    
+    .navbar a:hover {
+        background-color: #503465;
+        color: #ddd;
+    }
+    
+    .navbar a.active {
+        background-color: #503465;
+        color: #ddd;
+        position:inherit;
+        padding:10px;
+    }
+
+    .navbar input[type=text] {
+        background-color:#26292b;
+        color:white;
+        border-radius:7px;
+        font-size:14pt;
+        margin:12px 0px 0px 0px;
+        border: 2px solid #ccc;
+        float:right;
+    }
+
+    .centeredcontent {
+        margin:auto;
+        text-align:left;
+        width:70%;
+        background-color:#1d1137;
+        color:white;
+        font-family:"Open Sans", sans-serif;
+        
+    }
+
+    .centeredcontent p {
+        padding:40px;
+        padding-bottom:0;
+        padding-top:15px;
+    }
+    
+    .centeredcontent textarea {
+        background-color:#26292b;
+        color:white;
+        border-radius:7px;
+        font-size:14pt;
+        margin-top:0;
+        margin-bottom:0;
+        border: 2px solid #ccc;
+        width:90%;
+        word-break:break-all;
+        resize:none;
+    }
+
+    .centeredcontent #Submit {
+        border-radius: 4px;
+        background: #ddd;
+        background-image: linear-gradient(#fff, #ddd);
+        border: 1px solid;
+        border-color: #ddd;
+        cursor: pointer;
+        color: #000;
+        font:12px;
+        margin: 0;
+        margin-bottom:5px;
+        padding: 3px 10px;
+        text-decoration: none;
+    }
+    }

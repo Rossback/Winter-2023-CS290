@@ -1,8 +1,8 @@
-function myFunction() {
-    var x = document.getElementById("hidelinks");
-      if (x.style.display === "none") {
-        x.className == "showlinks";
-      } else {
-        x.className == "hidelinks";
-      }
+function openSesame() {
+  var x = document.getElementById("links");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
 }
