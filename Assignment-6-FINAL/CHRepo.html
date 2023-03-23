@@ -2,12 +2,33 @@
     The normal requirements table that I lay out for these assignments will be at the bottom as I want to lay out my
     goals for this assignment in this header.
 
+    PREFACE:
+    I accomplished most of my goals with this!!! I'm not sure how important
+    the specific loops and arrays part of requirement 4 are in the assignment
+    requirements, but I think I sufficiently demonstrated my ability to do the
+    rest of the requirements :) I decided to not fully set up the contact me page
+    because it wouldn't really show anything new for you to grade unless I did
+    some stuff in php to allow people to enter data to send an email.
+
+    The part where I review each of the sites I picked at the beginning of the term
+    will be in WrittenPortion.md in the GitHub Repo.
+
+    Thank you for all your time and effort with all of your classes, LBCC
+    isn't really showing that it appreciates all the work that you do, but
+    rest assured that your students appreciate it a lot <3
+
+
     GOALS:
         I want to create a website with similar functionality to chorus.fightthe.pw, specifically I want to achieve the following:
         [] Create a smooth and intuitive user experience (design/structure/style/js proficiency)
         [] Allow upload and download of files (client- and server-side components, user IO and input validation)
         [] Self-hosted (maybe could kinda count as use of an api in some weird roundabout way...?)
         [] Allow there to be a contact me page that users can utilize to send recommendations, questions, or bug reports to an email inbox.
+
+    CURRENT PROBLEMS AND THINGS THAT WOULD NEED FIXING DUE TO SECURITY:
+    [] Validation that inputs for Upload form don't include malicious code
+    [] Styles aren't able to be applied to elements in data.txt
+
 -->
 
 <!DOCTYPE html>
@@ -46,41 +67,12 @@
     </div>
 
     <div class="centeredcontent">
-        <p>A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
-            A man, a plan, a canal—Panama! <br>
+        <p>
+        <?php
+            $fp = fopen('data.txt', 'r');
+            echo fread($fp, 1000);
+        ?>
         </p>
-
     </div>
     
 </body>
@@ -98,9 +90,9 @@
             [x] functions
             [x] classes
             [x] files
-        [] user IO and input validation
-        [] client-side components
-        [] server-side components
+        [x] user IO and input validation
+        [x] client-side components
+        [x] server-side components
         [] try to use some web api (don't know how to mix that with GH but will try and find a way)
 
     Go re-review any of the sites that you picked at the start of the term

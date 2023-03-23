@@ -83,10 +83,7 @@ body {
     width:70%;
     background-color:#1d1137;
     color:white;
-}
-
-.centeredcontent p {
-    padding:15px;
+    font-family:"Open Sans", sans-serif;
 }
 
 .navbar {

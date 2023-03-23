@@ -13,6 +13,7 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="Hamburger.js"></script>
+    <script type="text/javascript" src="Upload.js"></script>
 
     
 </head>
@@ -34,7 +35,7 @@
     </div>
 
     <div class="centeredcontent">
-        <form>
+        <form action="UploadCapture.php" method="post">
             <p>Enter Song Name:
             <textarea
             type="text"
@@ -76,9 +77,11 @@
             required></textarea></p>
             
             <p>
-            <input type="submit"
-            name="Submit" value="Submit" id="Submit">
+            <input type="submit" name="submit">
             </p>
         </form>
-
     </div>
+    </body>
+    </html>
+
+    
